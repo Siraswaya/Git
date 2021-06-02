@@ -65,10 +65,17 @@ Command & Example :
 
     git fetch				
     
-## รวมโค้ดจาก Github (remote) มาที่เครื่อง Local		git pull		
+## Git Pull รวมโค้ดจาก Github (remote) มาที่เครื่อง Local				
 Command & Example : 
 
-		git merge origin/master		
+    git pull
+
+## Git Merge - ผสาน Branch ที่มีการแก้ไข				
+Command & Example : 
+
+    git merge origin/master
+    
+ > เมื่อ Merge แล้วให้ทำการ Commit โดยใช้คำสั่ง git Commit
     
 ## Delete - ลบ Branch		
 Command & Example : 
@@ -83,7 +90,7 @@ Command & Example :
 ## Git Clone - คัดลอกโปรเจ็คนั้นมาไว้ที่เครื่องของเรา    
 Command :
 
-		git clone gitURL		
+    git clone gitURL		
     
 Example : 
 
