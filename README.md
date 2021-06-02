@@ -1,7 +1,7 @@
 # Git
 
-## Add git	- เพิ่ม git ใน Folder นั้นๆ
-  
+## Add git - เพิ่ม git ใน Folder ที่เครื่อง Local ที่ต้องการส่งขึ้น Server
+  > โดยเมื่อ Run คำสั่งนี้เสร็จแล้ว จะมีการสร้างไฟล์ .git ขึ้นใน Path 
   Command :
   
     git init
@@ -9,9 +9,13 @@
   Example :
   
     C: ..\Path\projectCode git init
-  				
   
-## Add File - เพิ่มไฟล์   
+  
+  
+  
+## Add File - เพิ่มไฟล์ที่ต้องการนำขึ้น Server 
+> สามารถเพิ่มแค่บางไฟล์ที่ต้องการ หรือจะเพิ่มทั้งหมดก็ได้ โดยจะใช้คำสั่งดังต่อไปนี้
+
   ### Command เพิ่มบางไฟล์ :
   
     git add <fileName.typeFile>		
@@ -26,22 +30,25 @@
     git add .				
     	
 ## Commit File 
+> เมื่อเรา Commit จะทำให้เราสามารถย้อนมาดูได้ว่ามีการแก้ไขอะไรไปบ้าง
+
   Command & Example : 
   
     git commit -m "message commit"
-  
 					
-## Add Branch - เพิ่ม Branch		
+## Add Branch 	
   Command & Example : 
   
     git branch -M main			
     
-## Add URL Remote Server - เพิ่ม url ของ Remote (Server) เพื่อให้รู้ว่าเราจะฝากโค้ดไว้ที่ใด		
+## Add URL Remote Server
+> เพิ่ม url ของ Remote (Server) เพื่อให้รู้ว่าเราจะฝากโค้ดไว้ที่ใด		
   Command & Example : 
   
     git remote add origin https://github.com/Siraswaya/learning.git				
     
-## Push Code to Server - ส่งโค้ดไปที่ Github Server
+## Push Code to Server 
+> ส่งโค้ดไปที่ Github Server
   Command & Example : 
   
     git push -u origin main	
@@ -50,44 +57,56 @@
   - origin : คือชื่อ alias ของ remote (github)			
   - master : คือชื่อ branch ที่เราต้องการ push ขึ้นไป									
 						
-## Create New Branch - สร้าง Branch ใหม่		
+## Create New Branch  
+> สร้าง Branch ใหม่		
   Command & Example : 
   
-    git branch branchNameNew		
+    git branch branchNameNew	
     
-## Change Other Branch - เปลียนไปใช้ Branch	อื่น
+> สามารถใช้คำสั่ง git branch เพื่อดูว่าปัจจุบันอยู่ที่ Branch ใดได้
+
+   	git branch
+    
+## Git Checkout (Switch Other Branch)
+> เปลียนหรือสลับไปใช้ Branch อื่น
 Command & Example : 
 
     git checkout branchName				
     
-## Fetch ข้อมูลระหว่าง Local กับ Github (remote) ว่ามีโค้ดส่วนใดต่างกัน		
+## Git Fetch 
+> ข้อมูลระหว่าง Local กับ Github (remote) ว่ามีโค้ดส่วนใดต่างกัน		
 Command & Example : 
 
     git fetch				
     
-## Git Pull รวมโค้ดจาก Github (remote) มาที่เครื่อง Local				
+## Git Pull 
+> รวมโค้ดจาก Github (remote) มาที่เครื่อง Local				
 Command & Example : 
 
     git pull
 
-## Git Merge - ผสาน Branch ที่มีการแก้ไข				
+## Git Merge 
+> ผสาน Branch ที่มีการแก้ไข				
 Command & Example : 
 
     git merge origin/master
     
  > เมื่อ Merge แล้วให้ทำการ Commit โดยใช้คำสั่ง git Commit
     
-## Delete - ลบ Branch		
+## Delete Branch
+> ลบ Branch		
 Command & Example : 
 
     git branch -d branchName	
     
-## Remove origin - ลบ origin	
+## Remove origin 
+> ลบ origin	
 Command & Example : 
     		
     git remote rm origin		
     
-## Git Clone - คัดลอกโปรเจ็คนั้นมาไว้ที่เครื่องของเรา    
+## Git Clone
+> คัดลอกโปรเจ็คนั้นมาไว้ที่เครื่องของเรา    
 Command :
 
     git clone gitURL		
