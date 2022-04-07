@@ -22,7 +22,7 @@
     
    Example :   
   
-    git add README.md			    
+    git add README.md	
     
   ### Command เพิ่มไฟล์ทั้งหมด
   ##### ที่อยู่ในโฟลเดอร์หรือ Path นั้น :
@@ -35,6 +35,13 @@
   Command & Example : 
   
     git commit -m "message commit"
+    
+## Push File 
+> เป็นการส่งข้อมูลจาก Local ไปยัง Remote Repository
+
+  Command & Example : 
+  
+    git push origin master
 					
 ## Add Branch 	
   Command & Example : 
