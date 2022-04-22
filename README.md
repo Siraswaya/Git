@@ -123,7 +123,7 @@ Example :
     git clone https://github.com/Siraswaya/learning.git
     
 ## Git Force Pull 
-> รวมโค้ดจาก Github (remote) มาที่เครื่อง Local				
+> รวมโค้ดจาก Github (remote) มาที่เครื่อง Local	โดยจะทำการบังคับดึงข้อมูลมาทับไฟล์ในเครื่อง Local ทั้งหมด			
 Command & Example : 
 
 First, run a fetch to update all origin/<branch> refs to latest:
