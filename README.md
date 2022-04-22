@@ -121,6 +121,33 @@ Command :
 Example : 
 
     git clone https://github.com/Siraswaya/learning.git
+    
+## Git Force Pull 
+> รวมโค้ดจาก Github (remote) มาที่เครื่อง Local				
+Command & Example : 
+
+First, run a fetch to update all origin/<branch> refs to latest:
+
+	git fetch --all
+	
+Backup your current branch:
+
+	git branch backup-master
+	
+Then, you have two options:
+
+	git reset --hard origin/master
+	
+OR If you are on some other branch:
+
+	git reset --hard origin/<branch_name>
+    
+    
+    
+    
+## Ref
+
+https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
 						
 		
 						
